@@ -34,6 +34,8 @@ if months_diff < 0:
 
 This part right here? 👆 It adjusts the age if the user’s birthday hasn’t happened yet this year. Without it, your calculator would be out here LYING. 💅
 
+---
+
 📂 Folder Structure
 
 📁 day-02-age-calculator/
