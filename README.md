@@ -28,6 +28,7 @@ We're going full beast mode on everything from:
 ## 📁 Folder Structure
 
 /day-01-python-intro/
+
 └── README.md 📝
 
 └── main.py 🐍
