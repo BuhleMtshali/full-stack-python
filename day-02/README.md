@@ -34,14 +34,6 @@ if months_diff < 0:
 
 This part right here? 👆 It adjusts the age if the user’s birthday hasn’t happened yet this year. Without it, your calculator would be out here LYING. 💅
 
-🧪 Sample Run
-
---------- Welcome to the Mini Age Calculator🍄 --------
-Enter your name: Buhle
-Great, What year were you born in Buhle: 2000
-What month were you born in ? (1-12): 1
-Okay Buhle, You are 25 years and 6 months old🎁
-
 📂 Folder Structure
 
 📁 day-02-age-calculator/
@@ -67,6 +59,16 @@ This was fun and a great warmup! It's simple, but it lays the foundation for dat
 🧚🏾 Quote of the Day
 
 "Every line of code is a seed for future greatness." 🌱
+
+
+🧪 Sample Run
+
+--------- Welcome to the Mini Age Calculator🍄 --------
+Enter your name: Buhle
+Great, What year were you born in Buhle: 2000
+What month were you born in ? (1-12): 1
+Okay Buhle, You are 25 years and 6 months old🎁
+
 
 Happy hacking! 💻✨
 
