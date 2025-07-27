@@ -49,7 +49,9 @@ Okay Buhle, You are 25 years and 6 months old 🎁
 ## 📂 Folder Structure
 
 📁 day-02-age-calculator/
+
 ├── age_calculator.py
+
 └── README.md ← you're reading it 👀
 
 
