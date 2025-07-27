@@ -23,18 +23,6 @@ Because why settle for *just* your age in years, when you can get the ✨full te
 - Handling negative month differences like a boss 😎  
 - Adding personality to my Python prompts (yes, it matters!)
 
----
-
-## 💡 Code Highlights
-
-```python
-if months_diff < 0:
-    years_diff -= 1
-    months_diff += 12
-
-This part right here? 👆 It adjusts the age if the user’s birthday hasn’t happened yet this year. Without it, your calculator would be out here LYING. 💅
-
----
 
 📂 Folder Structure
 
@@ -61,6 +49,20 @@ This was fun and a great warmup! It's simple, but it lays the foundation for dat
 🧚🏾 Quote of the Day
 
 "Every line of code is a seed for future greatness." 🌱
+
+---
+
+## 💡 Code Highlights
+
+```python
+if months_diff < 0:
+    years_diff -= 1
+    months_diff += 12
+
+This part right here? 👆 It adjusts the age if the user’s birthday hasn’t happened yet this year. Without it, your calculator would be out here LYING. 💅
+
+---
+
 
 
 🧪 Sample Run
