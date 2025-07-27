@@ -38,17 +38,20 @@ Without it, your calculator would be out here LYING. 💅
 
 
 ## 🧪 Sample Run
+
 --------- Welcome to the Mini Age Calculator🍄 --------
 Enter your name: Buhle  
 Great, What year were you born in Buhle: 2000  
 What month were you born in ? (1-12): 1  
 Okay Buhle, You are 25 years and 6 months old 🎁
 
+
 ## 📂 Folder Structure
 
 📁 day-02-age-calculator/
 ├── age_calculator.py
 └── README.md ← you're reading it 👀
+
 
 ## 🛠️ Tools Used
 
@@ -58,16 +61,20 @@ Okay Buhle, You are 25 years and 6 months old 🎁
 
 - A sprinkle of ✨vibes✨
 
+
 ## 💬 Thoughts
 
 This was fun and a great warmup!
 It's simple, but it lays the foundation for date manipulation in real-world apps — from calendars to birthday reminders to age gates on websites.
+
 
 ## 📌 Status
 
 ✅ Completed and committed
 🗂️ Saved under /day-02-age-calculator
 🔥 Part of my 100 Days of Code Challenge
+
+
 
 ## 🧚🏾 Quote of the Day
 "Every line of code is a seed for future greatness." 🌱
