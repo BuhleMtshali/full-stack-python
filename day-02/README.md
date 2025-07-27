@@ -31,6 +31,7 @@ Because why settle for *just* your age in years, when you can get the ✨full te
 if months_diff < 0:
     years_diff -= 1
     months_diff += 12
+```
 
 👆 This part right here? It adjusts the age if the user’s birthday hasn’t happened yet this year.
 Without it, your calculator would be out here LYING. 💅
