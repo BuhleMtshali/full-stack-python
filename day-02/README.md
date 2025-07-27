@@ -32,52 +32,37 @@ if months_diff < 0:
     years_diff -= 1
     months_diff += 12
 
----
-This part right here? 👆 It adjusts the age if the user’s birthday hasn’t happened yet this year. Without it, your calculator would be out here LYING. 💅
+👆 This part right here? It adjusts the age if the user’s birthday hasn’t happened yet this year.
+Without it, your calculator would be out here LYING. 💅
 
-🧪 Sample Run
+
+##🧪 Sample Run
 --------- Welcome to the Mini Age Calculator🍄 --------
-Enter your name: Buhle
-Great, What year were you born in Buhle: 2000
-What month were you born in ? (1-12): 1
-Okay Buhle, You are 25 years and 6 months old🎁
+Enter your name: Buhle  
+Great, What year were you born in Buhle: 2000  
+What month were you born in ? (1-12): 1  
+Okay Buhle, You are 25 years and 6 months old 🎁
 
----
-
----
-📂 Folder Structure
-
+##📂 Folder Structure
 📁 day-02-age-calculator/
 ├── age_calculator.py
 └── README.md ← you're reading it 👀
 
----
+##🛠️ Tools Used
+- Python 3 🐍
 
----
-🛠️ Tools Used
+- datetime module 🗓️
 
-Python 3
+- A sprinkle of ✨vibes✨
 
-datetime module
+##💬 Thoughts
+This was fun and a great warmup!
+It's simple, but it lays the foundation for date manipulation in real-world apps — from calendars to birthday reminders to age gates on websites.
 
-A sprinkle of ✨vibes✨
-
-
-💬 Thoughts
-
-This was fun and a great warmup! It's simple, but it lays the foundation for date manipulation in real-world apps — from calendars to birthday reminders to age gates on websites.
-
-📌 Status
-
+##📌 Status
 ✅ Completed and committed
 🗂️ Saved under /day-02-age-calculator
 🔥 Part of my 100 Days of Code Challenge
 
-
-🧚🏾 Quote of the Day
-
+##🧚🏾 Quote of the Day
 "Every line of code is a seed for future greatness." 🌱
-
-Happy hacking! 💻✨
-Let’s keep pushing.
----
