@@ -1,6 +1,5 @@
 # 🐍 Day 1 — Hello Python World! 🌍💻
 
-## 📅 Date: July 1, 2025  
 ## 🔥 Level: Beginner (Day 1 of 100)
 
 ---
