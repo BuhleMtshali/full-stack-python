@@ -29,13 +29,19 @@ We're going full beast mode on everything from:
 
 /day-01-python-intro/
 └── README.md 📝
+
 └── main.py 🐍
+
 /day-02-strings-numbers/
+
 └── README.md 📝
+
 └── app.py ⚙️
 ...
 /day-100-deploy-capstone/
+
 └── README.md 📝
+
 └── final_project.py 💥
 
 
