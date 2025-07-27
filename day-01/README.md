@@ -50,19 +50,6 @@ Awesome, Buhle! How old are you? 👉 21
 Wow Buhle! You’ll turn 100 in the year 2104 🔥🔥🔥
 
 
-### 🐍 Code Snippet:
-
-```python
-# Simple intro program - Day 1 🐍
-from datetime import datetime
-
-name = input("Hey there, what's your name? 👉 ")
-age = int(input(f"Awesome, {name}! How old are you? 👉 "))
-current_year = datetime.now().year
-year_turn_100 = current_year + (100 - age)
-
-print(f"Wow {name}! You’ll turn 100 in the year {year_turn_100} 🔥🔥🔥")
-
 💭 Reflections
 - Honestly, this was kinda fun! 😄
 
@@ -76,3 +63,18 @@ We gon’ vibe with strings, numbers, and start flexin’ with f-strings and for
 
 💬 “Start where you are. Use what you have. Do what you can.” — Arthur Ashe
 Let’s get it, Day 1 ✅
+
+
+### 🐍 Code Snippet:
+
+```python
+# Simple intro program - Day 1 🐍
+from datetime import datetime
+
+name = input("Hey there, what's your name? 👉 ")
+age = int(input(f"Awesome, {name}! How old are you? 👉 "))
+current_year = datetime.now().year
+year_turn_100 = current_year + (100 - age)
+
+print(f"Wow {name}! You’ll turn 100 in the year {year_turn_100} 🔥🔥🔥")
+
