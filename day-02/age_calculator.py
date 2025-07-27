@@ -18,6 +18,6 @@ months_diff = today.month - birth_date.month
 #adjusting if the birthday hasn't cum yet
 if months_diff < 0:
     years_diff -= 1
-    months_diff += 1
+    months_diff += 12
 
 print(f"Okay {name.title()}, You are {years_diff} years and {months_diff} months old🎁")
