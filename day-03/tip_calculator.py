@@ -13,5 +13,5 @@ number_of_people = int(input('How many people are the dividing the order total w
 
 amount_per_person = overall_total / number_of_people
 
-print(f"Each person will pay: {amount_per_person}")
+print(f"Each person will pay: {amount_per_person:.2f}")
 
