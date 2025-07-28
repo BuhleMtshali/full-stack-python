@@ -8,8 +8,11 @@ Ever been out with friends and the bill lands on the table like a final boss bat
 ## 🧠 What It Does
 
 - Takes your **order total**
+
 - Lets you choose a **tip percentage**
+
 - Splits the bill between any number of people (even just you 🫠)
+
 - Spits out a neat little **receipt** with all the details
 
 Oh, and it loops too! Because sometimes we like to play with numbers before facing reality 😅
@@ -19,9 +22,13 @@ Oh, and it loops too! Because sometimes we like to play with numbers before faci
 ## 📦 Features
 
 ✅ Calculate tip amount based on order total  
+
 ✅ Add tip to the total  
+
 ✅ Divide the total among any number of people  
+
 ✅ Handles solo-bill guilt with humor 🫢  
+
 ✅ Loop to run multiple calculations (if you're *that* generous)
 
 ---
@@ -82,7 +89,9 @@ Okay, see you next time! 👋💰
 ## 📌 Status
 
 ✅ Completed and committed
+
 📁 Saved under /day-03-tip-calculator
+
 🔥 Part of my 100 Days of Code challenge
 
 ## 💭 Quote of the Day
