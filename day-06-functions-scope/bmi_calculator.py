@@ -1,3 +1,4 @@
+
 def get_BMI():
     """Calculate the BMI for the user"""
     print("===== Welcome to My mini BMI Calculator🧮 =====")
@@ -24,12 +25,25 @@ def get_BMI():
 
         user_height = user_height_cm / 100
         overall_BMI = user_weight / (user_height ** 2)
+        return overall_BMI
 
-        print(f"Okay {user_name}, your weight is {user_weight}kg and your height is {user_height}cm, so with that information, we have calculated your overall BMI to be {overall_BMI:.2f}kg/m^2")
-            
+        def get_BMI_category(overall_BMI):
+            """categorizing BMI"""
+            if overall_BMI < 18.5:
+                return "underweight"
+            elif 18.5 <= overall_BMI < 25:
+                return "Normal Weight"
+            elif 25 <= overall_BMI < 30:
+                return "Overweight"
+            else:
+                return "Obese"
+
+
+
         calculate_again = input("\nWanna make another calculation? (yes/no): ").strip().lower()
         if calculate_again != "yes":
             print(f"\nThank you {user_name} for trying my mini BMI calculator")
             break
-
+    
+ 
 get_BMI()
