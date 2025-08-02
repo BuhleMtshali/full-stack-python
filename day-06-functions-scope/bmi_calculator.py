@@ -28,8 +28,17 @@ def get_BMI():
        
         category = get_BMI_category(overall_BMI)
     
-        print(f"\n{user_name}, your BMI is {overall_BMI:.2f}kg/m² — You are **{category}**!")
-
+        print(f"""
+        ====================
+              
+        Name: {user_name}
+        Weight(kg): {user_weight}
+        Height(cm): {user_height}
+        BMI(kg/m²): {overall_BMI}
+        BMI Category: {get_BMI_category}
+        
+        ======================
+        """)
 
         
         calculate_again = input("\nWanna make another calculation? (yes/no): ").strip().lower()
