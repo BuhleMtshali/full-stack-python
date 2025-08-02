@@ -35,8 +35,8 @@ def get_BMI():
         Weight(kg): {user_weight}
         Height(cm): {user_height}
         BMI(kg/m²): {overall_BMI}
-        BMI Category: {get_BMI_category}
-        
+        BMI Category: {category}
+
         ======================
         """)
 
