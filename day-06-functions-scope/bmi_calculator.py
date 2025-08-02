@@ -29,13 +29,13 @@ def get_BMI():
         category = get_BMI_category(overall_BMI)
     
         print(f"""
-        ====================
+        ========= BMI Report🙋🏻‍♀️ for: {user_name.title()} ===========
               
-        Name: {user_name}
+        Name: {user_name.title()}
         Weight(kg): {user_weight}
         Height(cm): {user_height}
-        BMI(kg/m²): {overall_BMI}
-        BMI Category: {category}
+        BMI(kg/m²): {overall_BMI:.2f}
+        BMI Category: {category.title()}
 
         ======================
         """)
