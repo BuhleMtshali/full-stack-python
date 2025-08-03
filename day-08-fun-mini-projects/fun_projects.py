@@ -1,5 +1,2 @@
-from rich.console import Console
-from rich.text import Text
-
-msg = Text("Happy friendship day!!", style="bold rainbow")
-Console().print(msg)
+from pyfiglet import figlet_format
+print(figlet_format("Happy Friendship Day", font="slant"))
