@@ -1,8 +1,13 @@
 #list to hold the grocery items
 grocery_list = []
 
+#greeting message
+greeting = print("===== 🍄Welcome To My Mini Grocery List🛒 ======");
+user_name = print("Enter your name: ");
+
 while True:
     print("here is the start of the loop")
+    #loop opens at the top here
 
 
 
