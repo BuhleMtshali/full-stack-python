@@ -9,6 +9,14 @@ while True:
     print("here is the start of the loop")
     #loop opens at the top here
 
+    print("1. View Cart")
+    print("2. Add Item")
+    print("3. Delete Item")
+    print("4. Search Item")
+    print("5. Exit")
+
+    optio = input("\nPlease Choose an option: ")
+
 
 
     #closing the loop
