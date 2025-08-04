@@ -15,8 +15,9 @@ while True:
     print("4. Search Item")
     print("5. Exit")
 
-    optio = input("\nPlease Choose an option: ")
+    option = input("\nPlease Choose an option: ")
 
+    #tomorrow i will implement if/else
 
 
     #closing the loop
