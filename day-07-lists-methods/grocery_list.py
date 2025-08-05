@@ -20,7 +20,7 @@ while True:
     if option == "1":
         if len(grocery_list) > 0:
             for item in grocery_list:
-                print(item)
+                print(item.title())
         else:
             print("Your cart is currently empty")
 
