@@ -41,6 +41,13 @@ while True:
             print(f"✅ {remove_item} has been successfully removed from your cart")
         else:
             print(f"🚫 {remove_item} does not exist in your cart")
+    
+    elif option == "4":
+        search_item = input("Enter the name of the item you want to search for in the list: ").strip().lower()
+        if search_item in grocery_list:
+            print(f"✅ {search_item} does exist in your list")
+        else:
+            print(f"🚫 {search_item} does not currently exist in your list, try adding it")
 
     #closing the loop
     add_again = input("\nWanna make another operation? (yes/no): ").strip().lower()
