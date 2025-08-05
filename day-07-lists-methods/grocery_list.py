@@ -24,7 +24,7 @@ while True:
                 print(item)
         else:
             print("Your cart is currently empty")
-            
+
     elif option == "2":
         add_item = input("Enter the name of the item you want to add: ").strip().lower()
         if add_item in grocery_list:
@@ -33,6 +33,14 @@ while True:
             grocery_list.append(add_item)
             print(f"✅ {add_item} has been successfuly added to your cart")       
 
+
+    elif option == "3":
+        remove_item = input("Enter the item you want to remove: ").strip().lower()
+        if remove_item in grocery_list:
+            grocery_list.remove(remove_item)
+            print(f"✅ {remove_item} has been successfully removed from your cart")
+        else:
+            print(f"🚫 {remove_item} does not exist in your cart")
 
     #closing the loop
     add_again = input("\nWanna make another operation? (yes/no): ").strip().lower()
