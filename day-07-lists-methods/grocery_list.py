@@ -24,7 +24,14 @@ while True:
                 print(item)
         else:
             print("Your cart is currently empty")
-        
+            
+    elif option == "2":
+        add_item = input("Enter the name of the item you want to add: ").strip().lower()
+        if add_item in grocery_list:
+            print("🚫 Item already exists in your list") 
+        else:
+            grocery_list.append(add_item)
+            print(f"✅ {add_item} has been successfuly added to your cart")       
 
 
     #closing the loop
