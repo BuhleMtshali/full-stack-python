@@ -52,6 +52,9 @@ while True:
     elif option == "5":
         print("Thank you using this mini cart app")
         break
+
+    else:
+        print("🚫Invalid input try again")
     #closing the loop
     add_again = input("\nWanna make another operation? (yes/no): ").strip().lower()
     if add_again != "yes":
