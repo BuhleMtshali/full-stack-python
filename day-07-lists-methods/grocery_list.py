@@ -3,7 +3,7 @@ grocery_list = ["eggs", "rice"]
 
 #greeting message
 greeting = print("\n===== 🍄Welcome To My Mini Grocery List🛒 ======");
-user_name = print("\nEnter your name: ");
+
 
 while True:
     #loop opens at the top here
