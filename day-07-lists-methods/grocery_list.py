@@ -18,6 +18,13 @@ while True:
     option = input("\nPlease Choose an option: ")
 
     #tomorrow i will implement if/else
+    if option == "1":
+        if len(grocery_list) > 0:
+            for item in grocery_list:
+                print(item)
+        else:
+            print("Your cart is currently empty")
+        
 
 
     #closing the loop
