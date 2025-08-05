@@ -1,5 +1,5 @@
 #list to hold the grocery items
-grocery_list = []
+grocery_list = ["eggs", "rice"]
 
 #greeting message
 greeting = print("===== 🍄Welcome To My Mini Grocery List🛒 ======");
