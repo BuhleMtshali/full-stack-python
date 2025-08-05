@@ -49,6 +49,9 @@ while True:
         else:
             print(f"🚫 {search_item} does not currently exist in your list, try adding it")
 
+    elif option == "5":
+        print("Thank you using this mini cart app")
+        break
     #closing the loop
     add_again = input("\nWanna make another operation? (yes/no): ").strip().lower()
     if add_again != "yes":
