@@ -15,3 +15,4 @@ while True:
     add_again = input("\nWanna add another contact? (yes/no): " ).strip().lower()
     if add_again != "yes":
         print("\nThank you for trying Mini Phonebook app!")
+        break
