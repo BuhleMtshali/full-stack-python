@@ -22,6 +22,14 @@ def view_contact_list():
     else:
         print("🚫Phone Book is currently empty")
 
+#creating an add function
+def add_contact():
+    name = input("Enter name: ").strip().lower()
+    number = input("Enter number: ").strip()
+
+    person = (name, number)
+
+    phone_book.append(person)
 
 while True:
     print("1. View Contact List")
