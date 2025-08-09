@@ -14,9 +14,9 @@ def view_contact_list():
         print("====== Contact List☎️ =======")
         for index, (name, phone) in enumerate(phone_book, start=1):
             print(f"""
-                List no. {index}
-                Name: {name.title()}
-                Number: {phone}
+            List no. {index}
+            Name: {name.title()}
+            Number: {phone}
                   """)
     else:
         print("🚫Phone Book is currently empty")
