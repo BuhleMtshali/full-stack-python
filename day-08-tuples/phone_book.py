@@ -1,5 +1,5 @@
 #main list 
-phone_book = []
+phone_book = [("Buhle", 0815905473)]
 
 
 #greet message
@@ -23,7 +23,14 @@ def view_contact_list():
 
 
 while True:
-    print("1. View Contact")
+    print("1. View Contact List")
+
+    #user choice
+    choice = int(input("Choose an option: "))
+
+    #conditional statements
+    if choice == 1:
+        view_contact_list()
 
 
     add_again = input("\nWanna add another contact? (yes/no): " ).strip().lower()
