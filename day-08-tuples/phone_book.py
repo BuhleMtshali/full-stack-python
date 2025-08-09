@@ -23,18 +23,30 @@ def view_contact_list():
 
 #creating an add function
 def add_contact():
-    name = input("Enter name: ").strip().lower()
-    number = input("Enter number: ").strip()
-
-    person = (name, number)
+    #check if the name was actually given
+    while True:
+        name = input("Enter name: ").strip().lower()
+        if not name:
+            print("Name cannot be empty, please add your name")
+        else:
+            break
+                
+    #while loop to check if the len is actually 10
+    while True:
+        number = input("Enter number: ").strip()
+        if len(number) >= 10:
+            person = (name, number)
+            break;
+        else:
+            print("Number is invalid, please try again")
 
     phone_book.append(person)
-
 
 
 while True:
     print("1. View Contact List")
     print("2. Add Contact")
+    print("3. Delete Contact")
 
     #user choice
     choice = int(input("Choose an option: "))
@@ -46,6 +58,7 @@ while True:
     elif choice == 2:
         add_contact()
 
+    #ask the user if they wanna continue again
     add_again = input("\nWanna add another contact? (yes/no): " ).strip().lower()
     if add_again != "yes":
         print("\nThank you for trying Mini Phonebook app!")
