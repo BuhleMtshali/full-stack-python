@@ -1,5 +1,5 @@
 #main list 
-phone_book = [("Buhle", 0815905473)]
+phone_book = [("Buhle", "0815905473")]
 
 
 #greet message
@@ -11,10 +11,11 @@ print(greeting)
 def view_contact_list():
     """view the contact list"""
     if len(phone_book) > 0:
-        for name, phone in phone_book:
+        for index, (name, phone) in enumerate(phone_book, start=1):
             print(f"""
                 ====== Contact List☎️ =======
-                  
+                
+                List no. {index}
                 Name: {name.title()}
                 Number: {phone}
                   """)
