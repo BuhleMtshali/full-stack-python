@@ -11,8 +11,13 @@ print(greeting)
 def view_contact_list():
     """view the contact list"""
     if len(phone_book) > 0:
-        for phone in phone_book:
-            print(f"Contact: {phone}")
+        for name, phone in phone_book:
+            print(f"""
+                ====== Contact List☎️ =======
+                  
+                Name: {name.title()}
+                Number: {phone}
+                  """)
     else:
         print("🚫Phone Book is currently empty")
 
