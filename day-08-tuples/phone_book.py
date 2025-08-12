@@ -57,7 +57,7 @@ while True:
 
     elif choice == 2:
         add_contact()
-
+    
     #ask the user if they wanna continue again
     add_again = input("\nWanna add another contact? (yes/no): " ).strip().lower()
     if add_again != "yes":
