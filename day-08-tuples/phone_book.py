@@ -45,14 +45,17 @@ def add_contact():
 #CREATING THE DELETE FUNCTION
 def delete_contact():
     while True:
-        delete_name = input("Enter the name of the contact you want to delete: ").strip()
+        delete_name = input("Enter the name of the contact you want to delete: ").strip().lower()
+        found = False
         for name in phone_book:
-            if delete_name == name:
-                phone_book.remove(delete_name)
-                print(f"{delete_name} has been successfully removed from the list")
+            if name[0].lower() == delete_name:
+                phone_book.remove(name)
+                print(f"✅{name[0]} has been successfully removed from the list")
+                found = True
+                break
                 break
             else:
-                print(f"{delete_name} has does not exist in the list")
+                print(f"🚫{delete_name} does not exist in the list")
 
 
 
