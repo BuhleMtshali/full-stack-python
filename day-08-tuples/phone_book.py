@@ -47,15 +47,20 @@ def delete_contact():
     while True:
         delete_name = input("Enter the name of the contact you want to delete: ").strip().lower()
         found = False
-        for name in phone_book:
-            if name[0].lower() == delete_name:
-                phone_book.remove(name)
-                print(f"✅{name[0]} has been successfully removed from the list")
+
+        for contact in phone_book:
+            if contact[0].lower() == delete_name:
+                phone_book.remove(contact)
+                print(f"✅ {contact[0]} has been successfully removed from the list")
                 found = True
-                break
-                break
-            else:
-                print(f"🚫{delete_name} does not exist in the list")
+                break  # exit loop after deleting
+        
+        if not found:
+            print(f"🚫 {delete_name.title()} does not exist in the list")
+        
+        again = input("Delete another contact? (yes/no): ").strip().lower()
+        if again != "yes":
+            break
 
 
 
