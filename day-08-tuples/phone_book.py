@@ -42,6 +42,15 @@ def add_contact():
 
     phone_book.append(person)
 
+#CREATING THE DELETE FUNCTION
+def delete_contact():
+    while True:
+        delete_name = input("Enter the name of the contact you want to delete: ").strip()
+
+
+
+
+#THE MAIN LOOOP FOR THE WHOLE PROGRAM
 
 while True:
     print("1. View Contact List")
