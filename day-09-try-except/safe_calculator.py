@@ -13,9 +13,12 @@ while True:
     except ValueError:
         print("Invalid operator, please try again!")
 
-    
-    second_number = float(input("Enter your second digit: "))
+    try:
+        second_number = float(input("Enter your second digit: "))
+    except ValueError:
+        print("Invalid number, please try again")
 
+        
     calculate_again = input("\nWanna make another calculation? (yes/no): ")
     if calculate_again != "yes":
         print("\nThank you trying my mini calculator!!!")
