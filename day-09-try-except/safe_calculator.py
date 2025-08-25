@@ -12,11 +12,13 @@ while True:
         operator = input("Choose your operator (+, -, *, /): ")
     except ValueError:
         print("Invalid operator, please try again!")
+        continue
 
     try:
         second_number = float(input("Enter your second digit: "))
     except ValueError:
         print("Invalid number, please try again")
+        continue
     
     result = 0
 
