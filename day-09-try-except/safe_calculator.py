@@ -17,8 +17,21 @@ while True:
         second_number = float(input("Enter your second digit: "))
     except ValueError:
         print("Invalid number, please try again")
+    
+    result = 0
 
-        
+    #IF STATEMENT
+    if operator == "+":
+        result = first_number + second_number
+       
+
+    elif operator == "-":
+        result = first_number - second_number
+
+
+
+    print(f"Result: {result}")
+    
     calculate_again = input("\nWanna make another calculation? (yes/no): ")
     if calculate_again != "yes":
         print("\nThank you trying my mini calculator!!!")
