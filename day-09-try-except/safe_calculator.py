@@ -23,15 +23,23 @@ while True:
     #IF STATEMENT
     if operator == "+":
         result = first_number + second_number
-       
 
     elif operator == "-":
         result = first_number - second_number
+    
+    elif operator == "*":
+        result = first_number * second_number
+
+    elif operator == "/":
+        if first_number == 0:
+            print("Cannot divide by 0")
+        else:
+            result = first_number / second_number
 
 
 
     print(f"Result: {result}")
-    
+
     calculate_again = input("\nWanna make another calculation? (yes/no): ")
     if calculate_again != "yes":
         print("\nThank you trying my mini calculator!!!")
