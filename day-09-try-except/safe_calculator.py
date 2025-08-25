@@ -2,7 +2,12 @@ print("------ Welcome to my Mini Safe Calculator📝 -------")
 
 #STARTING THE WHILE LOOP
 while True:
-    first_number = float(input("Enter your first digit: "))
+    try:
+        first_number = float(input("Enter your first digit: "))
+    except ValueError:
+        print("Oops, invalid input, please try again")
+        continue
+
     operator = input("Choose your operator (+, -, *, /): ")
     second_number = float(input("Enter your second digit: "))
 
