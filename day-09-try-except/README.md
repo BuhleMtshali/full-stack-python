@@ -78,3 +78,8 @@ Thank you trying my mini calculator!!!
 - Allow users to type entire equations (e.g., 12 + 5).
 
 - Add a simple GUI version with Tkinter or PyQt.
+
+
+## 👩🏽‍💻 Author
+
+Built with ❤️ by Buhle during the 100 Days of Python challenge (Day 9).
