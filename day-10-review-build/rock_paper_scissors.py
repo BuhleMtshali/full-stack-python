@@ -43,3 +43,12 @@ while True:
     elif playerMove == 'S':
         print('SCISSORS versus...')
         playerMove = 'SCISSORS'
+
+    # Count to three with dramatic pauses:
+    time.sleep(0.5)
+    print('1...')
+    time.sleep(0.25)
+    print('2...')
+    time.sleep(0.25)
+    print('3...')
+    time.sleep(0.25)
