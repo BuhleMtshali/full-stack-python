@@ -20,4 +20,10 @@ while True:
     #INNER while loop thats keeps asking the player to enter R,P,S or Q
     while True:
         print('{} Wins, {} Losses, {} Ties'.format(wins, loses, ties))
+        
         print('Enter your move: (R)ock (P)aper (S)cissors or (Q)uit')
+        playerMove = input('> ').upper()
+
+        if playerMove == 'Q':
+            print('Thanks for playing!');
+            sys.exit()
