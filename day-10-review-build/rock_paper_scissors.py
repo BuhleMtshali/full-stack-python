@@ -16,3 +16,8 @@ ties = 0
 
 
 #STARTING A MAIN WHILE LOOP
+while True:
+    #INNER while loop thats keeps asking the player to enter R,P,S or Q
+    while True:
+        print('{} Wins, {} Losses, {} Ties'.format(wins, loses, ties))
+        print('Enter your move: (R)ock (P)aper (S)cissors or (Q)uit')
