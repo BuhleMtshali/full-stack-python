@@ -8,3 +8,11 @@ print('''Rock, Paper, Scissor
 - Scissors beats paper
 
 ''')
+
+#variables to keep track of the number of wins, loses and ties
+wins = 0
+loses = 0
+ties = 0
+
+
+#STARTING A MAIN WHILE LOOP
