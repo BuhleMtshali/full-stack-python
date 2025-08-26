@@ -52,3 +52,14 @@ while True:
     time.sleep(0.25)
     print('3...')
     time.sleep(0.25)
+
+    # Display what the computer chose:
+    randomNumber = random.randint(1, 3)
+    if randomNumber == 1:
+        computerMove = 'ROCK'
+    elif randomNumber == 2:
+        computerMove = 'PAPER'
+    elif randomNumber == 3:
+        computerMove = 'SCISSORS'
+    print(computerMove)
+    time.sleep(0.5)
