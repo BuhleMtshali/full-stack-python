@@ -1,1 +1,6 @@
 this is my example file
+line 2
+line 3
+line 4
+line5
+lin 8
