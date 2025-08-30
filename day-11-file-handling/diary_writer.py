@@ -4,3 +4,4 @@ path = Path('/Users/buhlemtshali/Desktop/Python-Full-Stack/full-stack-python/day
 contents = path.read_text()
 print(contents)
 print(path.name)
+print(path.parent)
