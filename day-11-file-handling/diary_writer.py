@@ -1,8 +1,7 @@
 from pathlib import Path
 
+# 1. READING FROM A FILE
+
 path = Path('/Users/buhlemtshali/Desktop/Python-Full-Stack/full-stack-python/day-11-file-handling/pi_digits.txt')
-contents = path.read_text()
-print(contents)
-lines = contents.splitlines()
-for line in lines:
-    print(line)
+
+file_contents = path.read_text()
