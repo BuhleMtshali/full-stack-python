@@ -7,3 +7,6 @@ path = Path('/Users/buhlemtshali/Desktop/Python-Full-Stack/full-stack-python/day
 file_contents = path.read_text().rstrip()
 
 print(f"Read Example: {file_contents}")
+
+
+#2. WRITING TO A FILE
