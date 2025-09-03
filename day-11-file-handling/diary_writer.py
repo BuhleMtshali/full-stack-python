@@ -6,6 +6,9 @@ from pathlib import Path
 
 path = Path("example.txt")
 
+
 path.write_text("example file")
 
+
 print(path)
+print(path2)
