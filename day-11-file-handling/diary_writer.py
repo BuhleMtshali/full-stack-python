@@ -4,7 +4,7 @@ from pathlib import Path
 
 #path = Path('/Users/buhlemtshali/Desktop/Python-Full-Stack/full-stack-python/day-11-file-handling/pi_digits.txt')
 
-path = Path("Python-Full-Stack/full-stack-python/day-11-file-handling")
+path = Path("example.txt")
 
 path.write_text("example file")
 
