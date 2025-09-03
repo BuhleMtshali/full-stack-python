@@ -2,11 +2,10 @@ from pathlib import Path
 
 # 1. READING FROM A FILE
 
-path = Path('/Users/buhlemtshali/Desktop/Python-Full-Stack/full-stack-python/day-11-file-handling/pi_digits.txt')
+#path = Path('/Users/buhlemtshali/Desktop/Python-Full-Stack/full-stack-python/day-11-file-handling/pi_digits.txt')
 
-file_contents = path.read_text().rstrip()
+path = Path("Python-Full-Stack/full-stack-python/day-11-file-handling")
 
-print(f"Read Example: {file_contents}")
+path.write_text("example file")
 
-
-#2. WRITING TO A FILE
+print(path)
