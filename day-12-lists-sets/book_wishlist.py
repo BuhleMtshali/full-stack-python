@@ -1,16 +1,8 @@
-#MAIN CART
-shopping_cart = {"bread", "cheese"}
+# BOOK WISHLIST
+book_list = []
 
-print("\n--------- 📝 Welcome to My Mini Shopping Cart 🛒 --------")
-
-# START THE WHILE LOOP
-
-while True:
-    try:
-        print("1. View Cart 🛒")
-        print("2. Add Item 🥗")
-        print("3. Remove item 🚫")
-        print("4. Exit❌ ")
-    except ValueError:
-        print("Oppps wrong option")
-        continue
+# HERE I'M GONNA CREATE FUNCTIONS FOR EACH OPTION
+def greeting_message():
+    print("\n" + "=" * 45)
+    print("===== 🍄 Welcome To My Mini Grocery List 🛒 =====")
+    print("=" * 45 + "\n")
