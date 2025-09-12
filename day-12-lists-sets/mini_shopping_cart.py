@@ -7,7 +7,10 @@ print("\n--------- 📝 Welcome to My Mini Shopping Cart 🛒 --------")
 
 while True:
     try:
-        print("this is the try statement")
+        print("1. View Cart 🛒")
+        print("2. Add Item 🥗")
+        print("3. Remove item 🚫")
+        print("4. Exit❌ ")
     except ValueError:
         print("Oppps wrong option")
         continue
