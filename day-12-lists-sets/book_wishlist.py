@@ -14,3 +14,12 @@ def show_menu():
     print("3. Remove Book 🗑️")
     print("4. Mark as Read 🥸")
     print("5. Exit 🚫")
+
+def view_books():
+    if book_list:
+        print("\n📝 Your Books:")
+        for i, book in enumerate(book_list, start=1):
+            print(f"{i}. {book.title()}")
+
+    else:
+        print("🧺 Your cart is currently empty.")
