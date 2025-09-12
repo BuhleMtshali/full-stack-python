@@ -27,16 +27,25 @@ def view_books():
 
 
 # ADD BOOKS TO THE LIST
-def get_input(prompt, validator):
+def get_input(prompt, validator, transform=lambda v: v):
     """REUSABLE INPUT FUNCTION WITH VALIDATION"""
     while True:
         value = input(prompt).strip()
         if validator(value):
-            return value
+            return transform(value)
         print("❌ Invalid input, try again.")
+
+# HERE I AM VALIDATING THE USERS INPUT FOR YES/NO
+def yes_no_validator(value):
+    return value.lower() in ["yes", "y", "no", "n"]
+
+#RETURNS TRUE IF YES/Y
+def yes_no_transform(value):
+    return value.lower() in ["yes", "y"]
+
 
 def add_book():
     book_name = get_input("Enter the title of the book?: ", lambda v: len(v) > 0)
-    page_numbers = get_input("How many pages is the book?: ", lambda v: v.isdigit() and 0 < int(v) < 10000000)
-    #book_pub_year = input("Enter publification year: ")
+    page_numbers = get_input("How many pages is the book?: ", lambda v: v.isdigit() and 0 < int(v) < 10000000, transform=lambda v: int(v)) #HERE THE BOOK PAGES ARE STORED AS A NUMBER INSTEAD OF STRING
+    book_pub_year = get_input("Enter publification year: ", lambda v: v.isdigit())
     #have_read = input("Have you read it yet? (yes/no): ")
