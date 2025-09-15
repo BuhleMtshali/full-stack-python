@@ -86,4 +86,12 @@ def remove_book():
         if remove_another != "yes":
             break
 
-remove_book()
+
+# FUNCTION TO UPDATE THAT THE PEROSN HAS READ THE BOOK
+def update_read():
+    while True:
+
+
+        update_another = input("Do you want to update another book? (yes/no): ")
+        if update_another != "yes":
+            break
