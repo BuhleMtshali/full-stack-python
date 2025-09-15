@@ -1,5 +1,5 @@
 # BOOK WISHLIST
-book_list = []
+book_list = [{"the mummy", }]
 
 # HERE I'M GONNA CREATE FUNCTIONS FOR EACH OPTION
 def greeting_message():
@@ -69,13 +69,21 @@ def add_book():
 # FUNCTION TO REMOVE A BOOK
 def remove_book():
     while True:
-        #book_name = get_input("Enter the title of the book you want to remove: ", lambda v: len(v) > 0)
+        book_name = get_input("Enter the title of the book you want to remove: ", lambda v: len(v) > 0)
+        found = False
+
         for book in book_list:
-            print(f"Outer layer: {book}")
-            for book_each in book:
-                print(f"Inner book: {book_each}")
+            if book["title"].lower() == book_name:
+                book_list.remove(book)
+                print(f"✅ {book["title"]} has been successfuly removed")
+                found = True
+                break
+
+        if not found:
+            print(f"🚫 {book_name} does not exist")
 
         remove_another = input("Do you want to remove another book? (yes/no): ")
         if remove_another != "yes":
             break
 
+remove_book()
