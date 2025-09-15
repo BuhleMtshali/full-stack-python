@@ -113,10 +113,33 @@ def update_read():
 def main_function():
     while True:
 
+        print("1. View Books 📖")
+        print("2. Add Book 📒")
+        print("3. Remove Book 🗑️")
+        print("4. Mark as Read 🥸")
+        print("5. Exit 🚫")
 
+        choice = int(input("Please choose an option?: "))
 
+        # CONDITIONAL STATEMENTS
+        if choice == 1:
+            view_books()
+        
+        elif choice == 2:
+            add_book()
+
+        elif choice == 3:
+            remove_book()
+
+        elif choice == 4:
+            update_read()
+
+        elif choice == 5:
+            break
 
         do_another = input("\nDo want to perfom another action your book list? (yes/no): ")
         if do_another != "yes":
             print("\n--------- THANK YOU FOR TRYING MY MINI BOOK WISHLIST APP ------")
             break
+
+main_function()
