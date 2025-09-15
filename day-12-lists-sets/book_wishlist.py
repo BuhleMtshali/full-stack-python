@@ -58,7 +58,9 @@ def add_book():
     }
 
     book_list.append(book)
+    print(book_list)
 
 
 
 
+add_book()
