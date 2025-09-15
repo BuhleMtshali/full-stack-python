@@ -20,8 +20,8 @@ def show_menu():
 # FUNCTION FOR VIEWING BOOKS
 def view_books():
     if book_list:
+        print("----- YOUR BOOKS -----")
         for books in book_list:
-            print("----- YOUR BOOKS -----")
             for key, value in books.items():
                 print(f"{key.capitalize()}: {value}")
             print("-" * 30)
