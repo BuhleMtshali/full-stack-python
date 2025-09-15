@@ -90,7 +90,17 @@ def remove_book():
 # FUNCTION TO UPDATE THAT THE PEROSN HAS READ THE BOOK
 def update_read():
     while True:
+        update_name = get_input("Enter the title of the book you want to update: ", lambda v: len(v) > 0)
+        found = False
+        for book in book_list:
+            if book["title"].lower() == update_name.lower():
+                book["read"] = True
+                print(f"✅ Updated {book["title"]} to read!")
+                found = True
+                break
 
+        if not found:
+            print(f"{update_name} does not exist!")
 
         update_another = input("Do you want to update another book? (yes/no): ")
         if update_another != "yes":
