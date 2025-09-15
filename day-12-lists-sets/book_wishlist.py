@@ -20,9 +20,11 @@ def show_menu():
 # FUNCTION FOR VIEWING BOOKS
 def view_books():
     if book_list:
-        print("\n📝 Your Books:")
-        for i, book in enumerate(book_list, start=1):
-            print(f"{i}. {book.title()}")
+        for books in book_list:
+            print("----- YOUR BOOKS -----")
+            for key, value in books.items():
+                print(f"{key.capitalize()}: {value}")
+            print("-" * 30)
 
     else:
         print("🧺 Your cart is currently empty.")
