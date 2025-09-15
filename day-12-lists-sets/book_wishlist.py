@@ -15,6 +15,8 @@ def show_menu():
     print("4. Mark as Read 🥸")
     print("5. Exit 🚫")
 
+    choice = int(input("Please choose an option?: "))
+
 # FUNCTION FOR VIEWING BOOKS
 def view_books():
     if book_list:
@@ -104,4 +106,17 @@ def update_read():
 
         update_another = input("Do you want to update another book? (yes/no): ")
         if update_another != "yes":
+            break
+
+
+# STARTING THE MAIN FUNCTION
+def main_function():
+    while True:
+
+
+
+
+        do_another = input("\nDo want to perfom another action your book list? (yes/no): ")
+        if do_another != "yes":
+            print("\n--------- THANK YOU FOR TRYING MY MINI BOOK WISHLIST APP ------")
             break
