@@ -43,7 +43,7 @@ def yes_no_validator(value):
 def yes_no_transform(value):
     return value.lower() in ["yes", "y"]
 
-
+# FUNCTION THAT ACTUALLY THE BOOK TO THE LIST
 def add_book():
     while True:
         book_name = get_input("Enter the title of the book?: ", lambda v: len(v) > 0)
@@ -66,3 +66,11 @@ def add_book():
         if add_another != "yes":
             break
     
+# FUNCTION TO REMOVE A BOOK
+def remove_book():
+    while True:
+
+
+        remove_another = input("Do you want to remove another book? (yes/no): ")
+        if remove_another != "yes":
+            break
