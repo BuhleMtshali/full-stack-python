@@ -50,20 +50,15 @@ def add_book():
     book_pub_year = get_input("Enter publification year: ", lambda v: v.isdigit() and 0 < int(v) <= 2025, transform=lambda v: int(v))
     have_read = get_input("Have you read it yet? (yes/no): ", yes_no_validator, yes_no_transform)
 
-    return {
+    book = {
         "title": book_name,
         "pages": page_numbers,
         "year": book_pub_year,
         "read": have_read
     }
 
-
-    book = add_book()
     book_list.append(book)
 
 
 
 
-add_book()
-
-print(book_list)
