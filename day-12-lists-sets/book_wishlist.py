@@ -69,8 +69,13 @@ def add_book():
 # FUNCTION TO REMOVE A BOOK
 def remove_book():
     while True:
-
+        #book_name = get_input("Enter the title of the book you want to remove: ", lambda v: len(v) > 0)
+        for book in book_list:
+            print(f"Outer layer: {book}")
+            for book_each in book:
+                print(f"Inner book: {book_each}")
 
         remove_another = input("Do you want to remove another book? (yes/no): ")
         if remove_another != "yes":
             break
+
