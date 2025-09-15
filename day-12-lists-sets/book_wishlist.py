@@ -45,22 +45,24 @@ def yes_no_transform(value):
 
 
 def add_book():
-    book_name = get_input("Enter the title of the book?: ", lambda v: len(v) > 0)
-    page_numbers = get_input("How many pages is the book?: ", lambda v: v.isdigit() and 0 < int(v) < 10000000, transform=lambda v: int(v)) #HERE THE BOOK PAGES ARE STORED AS A NUMBER INSTEAD OF STRING
-    book_pub_year = get_input("Enter publification year: ", lambda v: v.isdigit() and 0 < int(v) <= 2025, transform=lambda v: int(v))
-    have_read = get_input("Have you read it yet? (yes/no): ", yes_no_validator, yes_no_transform)
+    while True:
+        book_name = get_input("Enter the title of the book?: ", lambda v: len(v) > 0)
+        page_numbers = get_input("How many pages is the book?: ", lambda v: v.isdigit() and 0 < int(v) < 10000000, transform=lambda v: int(v)) #HERE THE BOOK PAGES ARE STORED AS A NUMBER INSTEAD OF STRING
+        book_pub_year = get_input("Enter publification year: ", lambda v: v.isdigit() and 0 < int(v) <= 2025, transform=lambda v: int(v))
+        have_read = get_input("Have you read it yet? (yes/no): ", yes_no_validator, yes_no_transform)
 
-    book = {
-        "title": book_name,
-        "pages": page_numbers,
-        "year": book_pub_year,
-        "read": have_read
-    }
+        book = {
+            "title": book_name,
+            "pages": page_numbers,
+            "year": book_pub_year,
+            "read": have_read
+        }
 
-    book_list.append(book)
-    print(book_list)
+        book_list.append(book)
+        print(f"✅ Book has been added to the list")
+        print(book_list)
 
-
-
-
-add_book()
+        add_another = input("Wanna add another book? (yes/no): ")
+        if add_another != "yes":
+            break
+    
