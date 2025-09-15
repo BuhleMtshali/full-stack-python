@@ -1,5 +1,5 @@
 # BOOK WISHLIST
-book_list = [{"the mummy", }]
+book_list = []
 
 # HERE I'M GONNA CREATE FUNCTIONS FOR EACH OPTION
 def greeting_message():
@@ -73,9 +73,9 @@ def remove_book():
         found = False
 
         for book in book_list:
-            if book["title"].lower() == book_name:
+            if book["title"].lower() == book_name.lower():
                 book_list.remove(book)
-                print(f"✅ {book["title"]} has been successfuly removed")
+                print(f"✅ {book['title']} has been successfuly removed")
                 found = True
                 break
 
