@@ -1,7 +1,7 @@
 # NESTED LOOPS
-for i in range(1, 5):
-    for j in range(1, 5):
-        print(f"{i} x {j} = {i * j}")
+#for i in range(1, 5):
+    #for j in range(1, 5):
+        #print(f"{i} x {j} = {i * j}")
 
 
 # NESTED 2D LISTS
@@ -12,10 +12,11 @@ nested_list = [
 ]
 
 for first_row in nested_list:
-    print(first_row)
-    for nested_values in first_row:
-        print(nested_values, end=" ")
+    #print(first_row)
+    for value in first_row:
+        print(value, end=" ")
     print()
+    
 
 
 # NESTED LIST COMPREHENSION
